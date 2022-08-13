@@ -9,7 +9,7 @@ Most of the examples I've seen of splash screens for Blazor are either invoked a
 
 ## Removing background when Blazor is loaded
 
-Using the default Blazor template, the background image is completely overwritten by the content on large devices, but when the display collapses the navbar the background can be seen (thus on mobile devices, the background image remains visible after the application has loaded).  To overcome this, the `class` will be removed from the `html` element after loading, for completeness I've implemented this as a toggle: 
+Using the default Blazor template, the background image is completely overwritten by the content on large devices, but when the display collapses the navbar the background can be seen (thus on mobile devices, the background image remains visible after the application has loaded).  To overcome this, the `class` will be removed from the `html` element after loading, for completeness I've implemented this as a toggle:
 
 ```js
 export function toggleSplashClass() {
